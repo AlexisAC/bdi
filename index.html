@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Alexis Campos Codes</title>
+
+
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  
+  <link href="css/scrolling-nav.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Alexis Campos</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#bdi">Que es bdi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#ejemplos">Ejemplos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#flashcard">Flashcard</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-primary text-white">
+    <div class="container text-center">
+      <h1>Etiqueta <strong>&lt;bdi&gt;</strong></h1>
+      <p class="lead">Por Alexis Campos Gaytán</p>
+    </div>
+  </header>
+
+  <section id="bdi">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Qué es <strong>&lt;bdi&gt;</strong></h2>
+          <p class="lead">El elemento <strong>&lt;bdi&gt;</strong> aísla a un trozo de texto del contenido circundante con propósitos de formateo bidireccional de texto. Este elemento resulta muy útil en situaciones en las que el algoritmo bidireccional, responsable de decirdir automáticamente la dirección del texto,  puede "confundirse" y cambiar incorrectamente la dirección del texto.
+          <br>
+          <br>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="ejemplos" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Ejemplo de <strong>&lt;bdi&gt;</strong></h2>
+          <p class="lead">En este ejemplo, se recrea una conversación de chat, donde los nombres han sido elegidos por los usuarios involucrados. A continuación de cada nombre, se muestran los puntos obtenidos por el usuario entre paréntesis.
+
+            Para anticiparse a posibles problemas, los nombres están siendo encerrados con el elemento <strong>&lt;bdi&gt;</strong>, lo que evitará que el algoritmo bidireccional altere la dirección del texto circundante, en caso que los nombres usen una dirección diferente (como estos en hebreo).
+            <h3>Código con <strong>&lt;bdi&gt;</strong></h3>
+            <xmp>
+              <ul>
+                 <li><b><bdi>Aaron</bdi> (2):</b> Hola!</li>
+               
+                 <li><b><bdi>נקניק</bdi> (5):</b> Hola! Cómo estás?</li>
+               
+                 <li><b><bdi>Aaron</bdi> (2):</b> Bueno, ha sido una semana larga, pero creo que no puedo quejarme.</li>
+               
+                 <li><b><bdi>נקניק</bdi> (5):</b> Wow, estamos en la misma luna...</li>
+               
+               </ul>
+             </xmp>
+             <h3>Resultado con <strong>&lt;bdi&gt;</strong></h3>
+             <ul>
+              <li><b><bdi>Aaron</bdi> (2):</b> Hola!</li>
+            
+              <li><b><bdi>נקניק</bdi> (5):</b> Hola! Cómo estás?</li>
+            
+              <li><b><bdi>Aaron</bdi> (2):</b> Bueno, ha sido una semana larga, pero creo que no puedo quejarme.</li>
+            
+              <li><b><bdi>נקניק</bdi> (5):</b> Wow, estamos en la misma luna...</li>
+            
+            </ul>
+
+            Al no utilizar la etiqueta <strong>&lt;bdi&gt;</strong>
+            <br>
+            <br>
+       
+        
+
+            <h3>Resultado sin <strong>&lt;bdi&gt;</strong></h3>
+            <ul>
+
+              <li><b>Aaron (2):</b> Hola!</li>
+            
+              <li><b>נקניק (5):</b> Hola! Cómo estás?</li>
+            
+              <li><b>Aaron (2):</b> Bueno, ha sido una semana larga, pero creo que no puedo quejarme.</li>
+            
+              <li><b>נקניק (5):</b> Wow, estamos en la misma luna...</li>
+            
+            </ul>
+
+          
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="flashcard">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Flashcard etiqueta <strong>&lt;bdi&gt;</strong></h2>
+          <p class="lead">
+            <img src="img/1.png" class="img-fluid" alt="Responsive image">
+           
+            <a href="Flash card bdi.pdf" class="btn btn-primary btn-lg btn-block btn-success" role="button" download>Descargar Flashcard</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Realizado por Alexis Campos Gaytan 2020 <br>
+      fuente: https://www.w3schools.com/tags/tag_bdi.asp
+      </p>
+    </div>
+  </footer>
+
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+
+
+</body>
+
+</html>
